@@ -4,5 +4,14 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/ezabadalagif/', // Change this to '/your-repo-name/' when deploying to GitHub Pages
+  base: '/ezabadalagif/',
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://api.redgifs.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+  },
 })
