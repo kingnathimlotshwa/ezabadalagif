@@ -1,5 +1,4 @@
 import React from 'react';
-import type { RedGif } from '../../types/redgifs';
 import { useIntersection } from '../../hooks/useIntersection';
 
 interface GifCardProps {

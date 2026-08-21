@@ -1,5 +1,4 @@
 import React from 'react';
-import type { RedGif } from '../../types/redgifs';
 
 interface VideoPlayerProps {
   gif: any; // Using any to be safe with the API response
