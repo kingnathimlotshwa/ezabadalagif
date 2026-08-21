@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">RedGifViewer</string>
+    <string name="title_activity_main">RedGifViewer</string>
+    <string name="package_name">com.redgifviewer.app</string>
+    <string name="custom_url_scheme">com.redgifviewer.app</string>
+</resources>
