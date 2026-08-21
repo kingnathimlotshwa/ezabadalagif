@@ -5,13 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/ezabadalagif/',
-  server: {
-    proxy: {
-      '/api': {
-        target: 'https://api.redgifs.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
-  },
 })
